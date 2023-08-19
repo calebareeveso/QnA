@@ -1,4 +1,4 @@
-import UserInfo from "@/component/UserInfo";
+import UserInfo from "../../../component/userInfo";
 
 export default async function App() {
   return (
