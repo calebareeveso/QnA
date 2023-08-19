@@ -21,13 +21,13 @@ Qna is a web application that enhances memory retention through active recall. U
 Clone the project
 
 ```bash
-git clone https://github.com/calebareeveso/lil_memer_bot.git
+git clone https://github.com/calebareeveso/QnA.git
 ```
 
 Go to the project directory
 
 ```bash
-cd lil_memer
+cd QnA
 ```
 
 Install dependencies
@@ -58,7 +58,7 @@ npm run preview
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`MONGODB_URI=`
+`MONGODB_URI`
 
 `NEXT_PUBLIC_APP_UPLOAD_PRESET`
 
