@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import Link from "next/link";
 // lib
 import formattedDate from "@/lib/fDate";
-import API from "@/lib/sheet";
+ 
 // component
 import Menu from "./menu";
 // db

@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 // lib
 import formattedDate from "@/lib/fDate";
 import Link from "next/link";
-import API from "@/lib/sheet";
+ 
 // component
 import Nav from "@/component/nav";
 import Header from "@/component/header";

@@ -6,7 +6,7 @@ import edjsHTML from "editorjs-html";
 
 // lib
 import formattedDate from "@/lib/fDate";
-import API from "@/lib/sheet";
+ 
 // tools
 import { EDITOR_JS_TOOLS } from "@/config/editor-tools";
 import updateQnA from "@/lib/fetch/update/QnA";

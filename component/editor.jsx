@@ -7,7 +7,7 @@ import edjsHTML from "editorjs-html";
 import formattedDate from "@/lib/fDate";
 import generateRandomNumbers from "@/lib/generateRandomNumbers";
 import { EDITOR_JS_TOOLS } from "@/config/editor-tools";
-import API from "@/lib/sheet";
+ 
 // add QnA data 
 import addQnA from "@/lib/fetch/add/QnA";
 // session 
