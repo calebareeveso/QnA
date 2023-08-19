@@ -13,8 +13,12 @@ import formattedDate from "@/lib/fDate";
 import getAllQnA from "@/lib/fetch/get/allQnA";
 import getAllCollection from "@/lib/fetch/get/allCollection";
 export default async function Page() {
-  const qna = await getAllQnA("about");
-  const collections = await getAllCollection();
+  // const qna = await getAllQnA("about");
+  // const collections = await getAllCollection();
 
-  return <Main qna={qna} collections={collections} pathname={"about"} />;
+  return (
+    <div>JUST DEPLOY</div>
+
+    // <Main qna={qna} collections={collections} pathname={"about"} />
+  );
 }
