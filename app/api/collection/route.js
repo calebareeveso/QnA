@@ -30,7 +30,7 @@ export async function GET(request) {
                 formattedDate.parseDate(obj.viewedAt),
                 formattedDate.parseDate(formattedDate.Today())
               )
-            ) > Number(obj.dueIn)
+            ) >= Number(obj.dueIn)
         ).length;
 
         return {

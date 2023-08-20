@@ -176,7 +176,7 @@ details summary {
 }
 
 details summary > * {
-  display: inline-block;
+  display: inline;
 }
 
 .collection__title {
@@ -320,6 +320,9 @@ details summary > * {
   background-color: transparent;
   cursor: pointer;
   margin-left: 0.4rem;
+}
+.collection__item__dropdown__drop__btn svg {
+  color:$text-primary;
 }
 .qna__item__dropdown__drop__btn {
   padding-top: 0.2rem;
@@ -692,6 +695,9 @@ main {
 .dot__separate {
   transform: scale(2);
   margin: 0 0.4rem;
+}
+.header__dot__separate{
+  margin: 0 0.5rem;
 }
 .clock__icon {
   margin-left: 0.3rem;

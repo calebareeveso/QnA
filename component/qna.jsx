@@ -293,7 +293,7 @@ export default function qna({
     <div key={qindex}>
       <details>
         <summary className="qna__item__btn" onClick={viewedQnA}>
-          <span className="">
+          <span>
             {" "}
             <span className={dateDiff >= dueIn ? "red__text" : ""}>
               {/* {questionTitle} */}

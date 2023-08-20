@@ -60,7 +60,13 @@ export default function QnaEditor({
               const questionTitleInputValue = questionTitleInput.current.value;
               const categoryInputValue = categoryInput.current.value;
               const dueInInputValue = dueInInput.current.value;
-              const questionImagePreviewSRC = questionImagePreview.current.src;
+              let questionImagePreviewSRC;
+              if(questionImagePreview.current.src!== window.location.href){
+                questionImagePreviewSRC = questionImagePreview.current.src;
+              }else{
+                questionImagePreviewSRC = " ";
+              }
+              
 
               console.log(`questionTitleInput:`, questionTitleInputValue);
               console.log(`categoryInputValue:`, categoryInputValue);
@@ -73,7 +79,7 @@ export default function QnaEditor({
                   qindex: generateRandomNumbers(),
                   createdAt: formattedDate.Today(),
                   viewedAt: formattedDate.Today(),
-                  dueIn: dueInInputValue !=="" ? dueInInputValue : "7",
+                  dueIn: dueInInputValue !=="" ? dueInInputValue : "1",
                   questionTitle: questionTitleInputValue,
                   questionImage: questionImagePreviewSRC,
                   answerContent: answerContentHTML,

@@ -76,7 +76,11 @@ export default function header({ collectionData,pathname,setSearchInput }) {
         <span id="${hash}collectionPromps">{collectionData.filter(({ title }) => title === pathname)[0].noOfQnas}</span>]
       </span>
 
-      <span className="dot__separate">∙</span>
+      <span className="header__dot__separate"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="4" height="4" rx="0.1" fill="#090909"/>
+<rect y="4" width="4" height="3" rx="0.1" fill="white"/>
+</svg>
+</span>
       <span className="collection__title">
         {pathname.replace(/-/g, " ")}
       </span>
