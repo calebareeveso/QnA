@@ -23,7 +23,7 @@ const QnaEditor = dynamic(() => import("@/component/editor"), {
 
 
 
-export default function Main({ children,pathname,qna,collections }) {
+export default function Main({ children,pathname,qna,collections,referer }) {
 
   //   const pathname = usePathname();
   //   const title = pathname.replace(/^\//, "");
