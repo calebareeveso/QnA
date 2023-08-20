@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 import dynamic from "next/dynamic";
 // lib
@@ -21,10 +20,13 @@ const QnaEditor = dynamic(() => import("@/component/editor"), {
 });
  
 
-
+// forced dynamic search 
+import { useSearchParams } from 'next/navigation'
 
 export default function Main({ children,pathname,qna,collections,referer }) {
-
+  // forced dynamic search 
+  const searchParams = useSearchParams()
+  const search = searchParams.get('search')
   //   const pathname = usePathname();
   //   const title = pathname.replace(/^\//, "");
 

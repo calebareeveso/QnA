@@ -7,13 +7,11 @@ import Main from "@/component/main";
 import getAllQnA from "@/lib/fetch/get/allQnA";
 import getAllCollection from "@/lib/fetch/get/allCollection";
 
-// forced dynamic rendering
-import { headers } from "next/headers";
+// dynamic rendering
+export const dynamicParams = true;
+export const dynamic = "force-dynamic";
+
 export default async function Page({ params }) {
-  //
-  const headersList = headers();
-  const referer = headersList.get("referer");
-  //
   const qna = await getAllQnA(params.collection);
   const collections = await getAllCollection();
   const isSlugValid = collections.some(
@@ -26,11 +24,6 @@ export default async function Page({ params }) {
   }
 
   return (
-    <Main
-      qna={qna}
-      collections={collections}
-      pathname={params.collection}
-      referer={referer}
-    />
+    <Main qna={qna} collections={collections} pathname={params.collection} />
   );
 }

@@ -3,7 +3,8 @@ import connectMongoDB from "@/lib/db/mongodb";
 import { NextResponse } from "next/server";
 import Qna from "@/models/qna";
 import mongoose from "mongoose";
-// export async function HEAD(request) {}
+// forced dynamic render
+export const dynamic = "force-dynamic";
 
 // Function to get collection information
 export async function GET(request) {
