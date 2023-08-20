@@ -8,7 +8,7 @@ import getAllQnA from "@/lib/fetch/get/allQnA";
 import getAllCollection from "@/lib/fetch/get/allCollection";
 
 export default async function Page() {
-  const qna = await getAllQnA("about");
+  const qna = [];
   const collections = await getAllCollection();
 
   return <Main qna={qna} collections={collections} pathname={"about"} />;

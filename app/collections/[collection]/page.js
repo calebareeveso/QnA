@@ -12,7 +12,7 @@ export const dynamicParams = true;
 export const dynamic = "force-dynamic";
 
 export default async function Page({ params }) {
-  const qna = await getAllQnA(params.collection);
+  const qna = [];
   const collections = await getAllCollection();
   const isSlugValid = collections.some(
     (item) => item.title === params.collection
