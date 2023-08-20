@@ -128,11 +128,11 @@ export default function Main({ children,pathname,qna,collections }) {
                     />
                   </div>
                 </div>
-                : <div class="dot-wave">
-                <div class="dot-wave__dot"></div>
-                <div class="dot-wave__dot"></div>
-                <div class="dot-wave__dot"></div>
-                <div class="dot-wave__dot"></div>
+                : <div className="dot-wave">
+                <div className="dot-wave__dot"></div>
+                <div className="dot-wave__dot"></div>
+                <div className="dot-wave__dot"></div>
+                <div className="dot-wave__dot"></div>
             </div>}
               </div>
             }
