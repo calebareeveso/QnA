@@ -12,11 +12,9 @@ import VisitorsWarning from "@/component/visitorsWarning";
 import formattedDate from "@/lib/fDate";
 import getAllQnA from "@/lib/fetch/get/allQnA";
 import getAllCollection from "@/lib/fetch/get/allCollection";
+// dynamic rendering
+export const dynamic = "force-dynamic";
 export default async function Page({ params }) {
-  // const dev = process.env.NODE_ENV !== "production";
-  // const server = dev
-  //   ? "http://localhost:3000"
-  //   : "https://your_deployment.server.com";
   const qna = await getAllQnA(params.collection);
   const collections = await getAllCollection();
   const isSlugValid = collections.some(

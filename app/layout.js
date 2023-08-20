@@ -1,11 +1,6 @@
 import "../styles/App.scss";
-import { headers } from "next/headers";
-// component
-import Nav from "@/component/nav";
-import Header from "@/component/header";
 
 // lib
-import formattedDate from "@/lib/fDate";
 import { AuthProvider } from "@/component/providers";
 export const metadata = {
   title: "QnA",
