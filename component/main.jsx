@@ -18,15 +18,9 @@ const Qna = dynamic(() => import("@/component/qna"), { ssr: false });
 const QnaEditor = dynamic(() => import("@/component/editor"), {
   ssr: false,
 });
- 
-
-// forced dynamic search 
-import { useSearchParams } from 'next/navigation'
 
 export default function Main({ children,pathname,qna,collections,referer }) {
-  // forced dynamic search 
-  const searchParams = useSearchParams()
-  const search = searchParams.get('search')
+
   //   const pathname = usePathname();
   //   const title = pathname.replace(/^\//, "");
 
