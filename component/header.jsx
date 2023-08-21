@@ -21,8 +21,8 @@ export default function header({ collectionData,pathname,setSearchInput }) {
       let hash = window.location.hash.substring(1);
       sethash(hash);
       const filteredData = collectionData.filter(({ title }) => title === pathname);
-      setnoOfQnas(filteredData[0].noOfQnas);
-      setnoOfDueQnas(filteredData[0].noOfDueQnas);
+      setnoOfQnas(filteredData[0]?.noOfQnas);
+      setnoOfDueQnas(filteredData[0]?.noOfDueQnas);
     };
     loadQnaData();
   }, []);
@@ -70,10 +70,10 @@ export default function header({ collectionData,pathname,setSearchInput }) {
       <span className="qna__header__icon">
         [
         <span className="red__text" id="${hash}DueCollectionQnas">
-          {collectionData.filter(({ title }) => title === pathname)[0].noOfDueQnas}
+          {collectionData.filter(({ title }) => title === pathname)[0]?.noOfDueQnas}
         </span>
         <span className="line__separate">||</span>
-        <span id="${hash}collectionPromps">{collectionData.filter(({ title }) => title === pathname)[0].noOfQnas}</span>]
+        <span id="${hash}collectionPromps">{collectionData.filter(({ title }) => title === pathname)[0]?.noOfQnas}</span>]
       </span>
 
       <span className="header__dot__separate"><svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
