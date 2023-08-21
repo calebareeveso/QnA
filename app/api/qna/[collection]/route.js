@@ -59,11 +59,7 @@ export async function POST(request, { params }) {
     answerContent == null &&
     category == null
   ) {
-    if (
-      collection !== "drawer.css.map" ||
-      collection !== "collection" ||
-      collection !== "collection1"
-    ) {
+    if (collection !== "drawer.css.map") {
       await Qna(collection).create();
     }
   } else {
