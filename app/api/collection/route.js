@@ -15,7 +15,7 @@ export async function GET(request) {
   const collectionInfoArray = await Promise.all(
     collections
       .filter(({ name }) => {
-        return name !== "users";
+        return name !== "users" || name !== "collection1";
       })
       .map(async (collection) => {
         const collectionName = collection.name;
